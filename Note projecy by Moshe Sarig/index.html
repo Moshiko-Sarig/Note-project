@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Notes project by Moshe Sarig</title>
+</head>
+
+
+<body>
+    <h1>My Task Board</h1><hr style="border: solid black 2px;" color="black "><!--heaader-->
+    
+    
+
+    <form class="img" onsubmit="addNote()">  <!--this is the input area-->
+        <div>
+            <div> <label style="font-size:30px">The task:</label> </div>
+            <textarea id="task" class="textAreaInput" style="border:solid black 4px" required></textarea><br>
+
+            <label>Deadline to complete:</label>
+            <input type="date" id="date" style="border:solid black 4px" required>
+            <br>
+            <label> Target time to complete:</label>
+            <input type="time" id="time" style="border:solid black 4px" required><br>
+
+            <button type='submit' class="btn btn-success">Submit</button>
+
+            <input type="reset" class="btn btn-danger" value="Clear">
+    </form>
+    </div>
+
+
+    <span id="noteAreaDisplay">
+        <!--this is the place where notes are appears in the HTML page.  -->
+
+    </span>
+
+
+
+
+    <script src="Note.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>

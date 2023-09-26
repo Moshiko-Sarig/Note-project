@@ -1,0 +1,122 @@
+body { /*style the body*/
+    margin: 5px;
+    background-image: url(assets/photos/tile.jpg);
+}
+
+h1 {  /*style the main header */
+    font-family: 'MyUglyHandWriting';
+    text-align: center;
+    font-size: 120px;
+    animation: fadeIn ease 1.4s;
+}
+
+form {/*style the form input */
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 400px;
+    margin: auto;
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+}
+.textAreaInput {/*style to the text area in the input to be responsive*/
+    text-align: right;
+    height: 60%;
+    width: 75%;
+    background-color: transparent;
+    resize: vertical;
+}
+
+input {/*style the input only*/
+    margin: 8px;
+}
+
+button {/*style the buuton only*/
+    margin: 8px;
+}
+
+@font-face {/*creat the new header font */
+    font-family: "MyUglyHandWriting";
+    src: url("assets/fonts/MyUglyHandwriting-Regular.otf");
+}
+
+
+@keyframes fadeIn {/*controling the fadeIn opacity */
+    0% {
+        opacity: 0;
+    }
+
+    20% {
+        opacity: 0.2;
+    }
+
+    55% {
+        opacity: 0.55;
+    }
+
+    80% {
+        opacity: 0.8;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+
+.img {/*this is the input background image */
+    background-image: url(assets/photos/formbg.jpg);
+    width: 35%;
+    height: 20%;
+}
+
+.textpanel { /*the first div on the note stlye */
+    position: relative;
+    display: inline-block;
+    left:2%;
+    margin-right: 3%;
+    font-weight: bold;
+}
+
+.textpanel img {/*style the note image */
+    display: block;
+}
+
+.textpanel textarea {  /*position the text area on the note img */
+    position: absolute;
+    top: 35px;
+    left: 2%;
+    right: 2%;
+    height: 60%;
+    width: 75%;
+    background-color: transparent;
+    border: none;
+    resize: vertical;
+}
+
+.trash { /*position the trash on the note img */
+    position: absolute;
+    top: 7%;
+    right: 14%;
+    font-size: 30px;
+}
+
+.bi-trash:hover {/* change the color of the trash icond to red when hover on */
+    color: red;
+}
+
+.displayDate {/*moving the date to the note*/
+    position: absolute;
+    top: 87%;
+    left:2%;
+
+}
+
+.displayTime {/*moving the time to the note*/
+    position: absolute;
+    top: 80%;
+    left: 2%;
+}
+
